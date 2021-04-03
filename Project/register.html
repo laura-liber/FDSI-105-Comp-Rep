@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/mystyle.css"> 
+     <script src="https://kit.fontawesome.com/6da635e2db.js" crossorigin="anonymous"></script>
+    <title>The Fashion Pet</title>
+</head>
+<body>
+    <header>
+        <div class="site-header container">
+            <h1>The Fashion Pet</h1>
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="register.html">Register</a>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main class="container">
+        <h2>Register</h2>
+        <p>
+            <label for="name" class="form-label">*Name:</label>
+            <input class="form-control" type="text" name="name" id="petName">
+        </p>
+        <p>
+            <label for="age">*Age:</label>
+            <input class="form-control" type="number" name="age" id="petAge">
+        </p>
+        <p>
+            <label for="gender">*Gender:</label>
+            <input class="form-control" type="text" name="gender" id="petGender">
+        </p>
+        <p>
+            <label for="type">*Type:</label>
+            <select class="form-control" name="type" id="petType">
+                <option value="cat">Cat</option>
+                <option value="dog">Dog</option>
+                <option value="bird">Bird</option>
+                <option value="lizard">Reptile</option>
+            </select>
+        </p>
+        <p>
+            <label for="breed">*Breed:</label>
+            <input class="form-control" type="text" name="breed" id="petBreed">
+        </p>
+        <p>
+            <label for="service">*Service:</label>
+            <select class="form-control" name="service" id="petService">
+                <option value="shower">Shower</option>
+                <option value="nails">Nails Cut</option>
+                <option value="hair">Hair Cut</option>
+                <option value="full">Full Service</option>
+            </select>
+        </p>
+        <p>
+            <label for="owner">*Owner's Name:</label>
+            <input class="form-control" type="text" name="owner" id="ownerName">
+        </p>
+        <p>
+            <label for="phone">*Phone:</label>
+            <input class="form-control" type="text" name="phone" id="ownerPhone">
+        </p>
+        <button id="register-btn" type="button" class="btn btn-warning">Register</button>
+        <div id="pets">
+
+
+        </div>
+        <div id="profits">
+            
+        </div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Breed</th>
+                    <th>Service</th>
+                    <th>Owner</th>
+                    <th>Phone</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <div>
+                <input type="text" name="search" id="searchPet">
+                <button id="search-btn" class="btn btn-warning">Search</button>
+                <div id="alert-box" class="alert alert-success" role="alert">
+                    New pet registered!
+                </div>
+            </div>
+            <tbody id="pet-table">
+
+            </tbody>
+        </table>
+    </main>
+
+    <footer class="container">
+        <p id="footer-info">
+
+        </p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/display.js"></script>
+    
+  
+</body>
+</html>
